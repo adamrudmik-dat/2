@@ -78,17 +78,22 @@
     <p>Market Research & Consumer Insights</p>
   </header>
 
-  <!-- Large Banner Image -->
-  <img src="profile-banner.jpg" alt="Profile Banner" class="banner-image" />
-  <style>
-    .banner-image {
-      width: 100%;
-      max-width: 1600px;
-      height: auto;
-      display: block;
-      margin: 0 auto 40px auto;
-    }
-  </style>
+ <!-- Large Banner Image -->
+<img src="profile-banner.jpg" alt="Profile Banner" class="banner-image" />
+
+<style>
+  .banner-image {
+    width: 100%;
+    height: auto; /* keeps the full aspect ratio */
+    max-height: 90vh; /* adjust this to control how tall it can get */
+    object-fit: contain; /* shows the full image, no cropping */
+    display: block;
+    background-color: #000; /* optional – fills space if aspect ratio leaves gaps */
+    margin: 0 auto;
+  }
+</style>
+
+  
 
   <!-- Sections -->
   <section class="section">
@@ -136,6 +141,7 @@
 </body>
 
 </html>
+
 
 
 
